@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Luxuria Watch & Co.</title>
+    <style>
+          
+    nav {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .title{
+      
+      text-align: center;
+      top: 109;
+      left: 38%;
+      font-size: 350% ;
+      color:rgb(0, 0, 0);
+      text-decoration:  underline #777;
+}
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .search-bar {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #ddd;
+      color: #474747;
+    }
+  
+    .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            position: relative;
+            width: 18%;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .product p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .product span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .buy-now {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .product:hover .buy-now {
+            display: block;
+        }
+
+        .buy-now button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+        }
+      
+        .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-next {
+  background-color: #000000;
+  color: white;
+}
+
+.btn-prev {
+  background-color: #000000;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LUXURIA WATCH AND CO.</div>  
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="http://127.0.0.1:5500/brand.html">Brand</a>
+          <a href="#">Shop</a>
+          <a href="#">Service</a>
+          <a href="#">Help</a>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="title"> Richard Mille </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="product-container">
+       <div class="product">
+           <img src="  https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTFCZy69YXTMli4zMPP4AHzgcp74zD7uXsNpb8SIQtE4WkYwuF1sHc-M9AGeoE8kUeohYPz1Bq34UW3NuP6_oB6iYDTxEJnRnQKNmUVdH_Z5JOf_qK2XSGbrA&usqp=CAE" alt="Product 1"> 
+           <h3>Richard Mille Rm11-03 Fq Red Quartz Automatic </h3>
+           <p> True to Richard Mille’s brand slogan, the RM11-03 is indeed a racing machine for the wrist. This visually assertive Flyback Chronograph automatic watch boasts a unique construction where the movement is linked to a setting that is part of the case. The red quartz TPT and carbon case measures 44.50mm wide and 16.15mm thick</p>
+           <p><span>$ 530,000 </span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+     
+         <div class="product">
+           <img src=" https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTm-13zgrohMdShjPZR6l-elzTUnkMV5b9b7mmw2_Xdjc20UmYyLDXgVg-_ns9t2bZfqClkstHROlMrC13O11AVVV-4ULa5GoskGz_NFfPq1gbJ4SseP7hzFw&usqp=CAE" alt="Product 1">
+           <h3>Richard Mille Rm 11-05 Automatic</h3>
+           <p>Richard Mille RM11-05 spirit, grey Cermet is the fruit of painstaking research conducted by the brand, which is unrelenting in its commitment to the creation of new materials. This exclusive Richard Mille material combines the lightness of titanium and the hardness of a high-performance ceramic.</p>
+           <p><span> $632,000 </span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+     
+       <div class="product">
+           <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSotcnoJDiz-JwOTNximCrF9e59DU8PaCjbOMog8N-y6LjnX7q-Rk8TpeqwhXqBteO6ZsPeHs4baRi6BFraDG1DCBD61DcntFBrf1HfSqRWZJx8w6D5uc66BQ&usqp=CAE " alt="Product 1">
+           <h3> Richard Mille Rm11-03 Rg Ti Automatic</h3>
+           <p> Richard Mille RM11-03 RG TI Automatic Flyback Chronograph 44.5mm 18k Rose Gold and Titanium Black Rubber Straps Men's Watch, a remarkable timepiece that combines elegance, functionality, and precision. Crafted by the renowned brand Richard Mille, this watch is a part of their esteemed RM 011 collection, known for its exceptional quality and design</p>
+           <p><span>  $328,000</span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+     
+         <div class="product">
+           <img src=" https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRvC-ZrMW3bh394mHm8xdaok4bSyhyT2DxHwdlfdIq1D_M7XpzKuWKpIQSsgUKakdqsLTIa6apFDps_77I3AoiEhXBdTcAGiHXG8Iq8NNVUmSaMq7cZPoWA&usqp=CAE " alt="Product 1">
+           <h3>Richard Mille Rm 65-01 Ca Rg </h3> 
+           <p > Richard Mille RM 65-01 CA RG Split-seconds Chronograph Automatic Winding 44.5mm X 50mm 18K Rose Gold Black Rubber Straps Men's Watch The Richard Mille RM 65-01 CA RG has lightweight carbon composite tonneau-shaped case measures 44.5mm X 50mm and 16mm high. Sounds like a fairly large timepiece, but thanks to its ergonomics with a curved case back and a rubber strap, it fits comfortably on any wrist.</p>
+           <p><span>$393,000  </span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+     
+     </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="title">Patek Philippe </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="product-container">
+       <div class="product">
+           <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTEFFoL5AICS3pfvuYfYL9bGPTZBfB8KB0bsnIQjcY6MbjWQISPgAhJakJM5cGZESV06RLa8Wzv8_dC1KGpWL9w4CHAA6GfvkadhZQvDbJRMlHjwweqtdzq&usqp=CAE " alt="Product 1"> 
+           <h3> Patek Philippe 6002R-001 Grand Complications Sky Moon Tourbillon</h3>
+           <p> Patek Philippe 6002R-001 Grand Complications Sky Moon Tourbillon Mens Watch. A true masterpiece, this watch boasts a design that seamlessly blends artistry and precision engineering. Crafted by skilled hands, it features not just one or two, but an astounding 12 complications that set it apart from the rest. Exquisite Craftsmanship Every detail of the Patek Philippe 6002R-001 exudes luxury</p>
+           <p><span>   $7,288,000</span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+     
+       <div class="product"> 
+           <img src=" https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ2xbuzxde02ryFo67ztxJZwYDE4-v8FQ-BWUEmg1B1WC0B0Onx_PIC3HJDYVaDYTsdXtmaJa8nhVlefoK8EB7DMTND1_IbgY1uDGBPhKwyLXfN5FHiHwE-&usqp=CAE " alt="Product 1">
+           <h3>Patek Philippe 5207R-001 Grand Complication Tourbillon Minute Repeater Perpetual Calendar </h3>
+           <p>  The Patek Philippe 5207R-001 Grand Complication Tourbillon Minute Repeater Perpetual Calendar Men's Watch is an exquisite timepiece crafted by the renowned brand, Patek Philippe. This watch is a part of their Nautilus collection, known for its elegance and sophistication. Design and Materials The watch features a round case made of 18 Karat gold dial plate, giving it a luxurious and timeless appeal. The dial itself is black with gold applied hour markers, offering a striking contrast. </p>
+           <p><span> $656,000</span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+     
+       <div class=" product">
+           <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvHv5BOVIYl3R9-sFaSvYTSs-YUQc59Hy6Mc1BaAW3711vMXNcJZt7d1CfToXblq_6M3hISGa0NQOSKxlNx-krUHEyPZnKR-Mt0iZWtjK4rluL5TpThMcA&usqp=CAE " alt="Product 1">
+           <h3>Patek Philippe Grand Complications 5271/11P-010 Lacquered Chronograph Blue Dial </h3>
+           <p>Patek Philippe Grand Complications 5271/11P-010 Men's Watch, a remarkable timepiece that combines classic design with modern elegance. This watch showcases Patek Philippe's commitment to creating exquisite and innovative watches that stand the test of time. Elegant Design With its stunning blue baguette-cut sapphires weighing 5.16 carats, the Patek Philippe Grand Complications 5271/11P-010 is a jewelry version of the iconic Grande Complication chronograph.</p>
+           <p><span> $790,000 </span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+     
+         <div class="product">
+           <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRsQmbJ2NhfiphA9OhUl0A7zUklTDOHOD628TMzOjbuJtZBIu4eW9IuG8bmO52vaJ1C7E9oSr6L8Ox5GwW9hadJdNJBXlbGd6NnQv9Wf_PMwp_sj7t-B3ruwQ&usqp=CAE " alt="Product 1">
+           <h3> Patek Philippe Grand Complications 5971P-001 Perpetual Calendar Platinum</h3> 
+           <p > ATEK PHILIPPE GRAND COMPLICATIONS 5971P-001 PERPETUAL CALENDAR 40MM PLATINUM MEN'S WATCH Patek Philippe Grand Complications 5971P-001 White platinum case with a black leather strap. Fixed white diamond set bezel. Black dial with silver-tone leaf-style shape hands and diamond hour markers hour markers. Minute markers around the outer rim. Dial Type: Analog. Perpetual calendar: moonphase, date subdial at 6, day and month apertures at 12, leap year and am/pm. Chronograph - sub-dials displaying: seconds, minute, moon-phase. </p>
+           <p><span>  $426,000</span></p>
+           <div class="buy-now">
+               <button>Buy Now</button>
+           </div>
+       </div>
+       </div>
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="title">  Audemars Piguet </div>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="product-container">
+        <div class="product">
+            <img src=" https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTajnbGTJuwLOa9HjB57XlMgyLGkyuKyx2dNM6Z6gRHOnkDPeHBH1qi-Lq3q-Nguc3QwLVOIasBkUWznYDnRk22hIbZXmUu4uPCseiUv6vWLrbiB08sXYoL3w&usqp=CAE " alt="Product 1"> 
+            <h3>  Audemars Piguet Royal Oak 26735St. </h3>
+            <p> Audemars Piguet Royal Oak 26735ST.OO.1320ST.01 Selfwinding Flying Tourbillon Openworked “50th Anniversary” 41mm Stainless Steel Men's Watch WATCH SPECIFICATIONS Brand: Audemars Piguet Reference Number: 26735ST.OO.1320ST.01 Collection: Royal Oak “50th Anniversary” Case Material: Stainless Steel Case shape: Octagon Bracelet: Stainless steel case Crystal: Anti-Reflective Scratch Resistant Sapphire</p>
+            <p><span> $350, 000 </span></p>
+            <div class="buy-now">
+                <button>Buy Now</button>
+            </div>
+        </div>
+      
+        <div class="product"> 
+            <img src=" https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRJGoE46xzN_mTg07oal9G6w-fgMdzCguvf4cS-1xoTIUhd38YMwdWzerTlcsVqCDVSJdNAmEjiZTIkJtnlPpLJP2hw3Hitb1fujsA2s66V3ujdtl34qt2wKA&usqp=CAE" alt="Product 1">
+            <h3> Audemars Piguet Royal Oak 15412Ba.Yg.1224Ba.01 Yellow Gold Rainbow Gem-Set Bezel
+            </h3>
+            <p>The Audemars Piguet Royal Oak 15412BA.YG.1224BA.01 is a remarkable men's watch that combines exquisite design with precision engineering. Crafted by the renowned brand Audemars Piguet, this timepiece showcases exceptional artistry and attention to detail. Case and Bezel The case of the Royal Oak 15412BA.YG.1224BA.01 is made of hammered 18-carat yellow gold, giving it a unique and textured appearance.  </p>
+            <p><span>$430,000 </span></p>
+            <div class="buy-now">
+                <button>Buy Now</button>
+            </div>
+        </div>
+      
+        <div class=" product">
+            <img src=" https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSY4c2zw7UmDjKJK9Bzqj3lKAbBBCNUT7y7bDE4Cxo0gbbg8IdKQdJT1VbWftdIZOBj0VVj5ULdKVOvaidSOluVwtLYxzEfdo8dNGWwfzHPXMliJqnSapzNFA&usqp=CAE" alt="Product 1">
+            <h3> Audemars Piguet Royal Oak 26585Ce.Oo.1225Ce.01 Perpetual Calendar Open Worked 41Mm Ceramic </h3>
+            <p> Audemars Piguet, the Royal Oak 26585CE.OO.1225CE.01 features a stunning black ceramic case, which adds a touch of sophistication to its appearance. The case has an octagon shape, a signature characteristic of the Royal Oak collection. Measuring 41mm in diameter and 9.9mm in thickness, this watch offers a perfect balance between style and comfort. Dial and Hands The dial of this timepiece is a mesmerizing skeleton smoked external zone of the counters, allowing you to admire the intricate movements within. </p>
+            <p><span> $355,000 </span></p>
+            <div class="buy-now">
+                <button>Buy Now</button>
+            </div>
+        </div>
+      
+          <div class="product">
+            <img src="  https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSBJIIu8wN4RLSN9Puq_TRX8b2zF41mI9XgG7oz-HZ8Y1qS4l8HzOHVBlI0JOkNu8Wz8A1tcAts0_uHXu_KmhluewsBrJiKVZc5GwnrTW1RvsDr_UYhyn-QMA&usqp=CAE" alt="Product 1">
+            <h3>  Audemars Piguet Royal Oak 26579CS.OO.1225CS.01 Perpetual Calendar Blue Dial
+            </h3> 
+            <p > The Audemars Piguet Royal Oak Perpetual Calendar Reference 26579CS.OO.1225CS.01 is a remarkable timepiece that stands out with its distinctive all-blue ceramic design. This unisex watch marks a historic moment as it presents a case and bracelet fully crafted in blue ceramic, a first in the world of luxury watches. Its captivating appearance resembles a starlit sky, thanks to the matching blue Grande Tapisserie dial and subdials. With Royal Oak white gold applied hour-markers and hands featuring luminescent coating, this watch offers both style and functionality  </p>
+            <p><span> $500,000  </span></p>
+            <div class="buy-now">
+                <button>Buy Now</button>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="title">Omega  </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="product-container">
+         <div class="product">
+             <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvQW-_JADYV4CEQXHrIlagwyDFNUQu8qw6_0qq9xXuOLR61Yb3N2b-DXjTtnJcQiIke1Cvc0MrFBSTR9T8c0e5wL1miMewvThD6BMAWdA  " alt="Product 1"> 
+             <h3> Omega Seamaster Diver 300M Steel Anti-magnetic Watch - 210.30.42.20.03.002</h3>
+             <p> Launched in 2022, to celebrate 60 years of James Bond, this 42mm Seamaster Diver 300M in stainless steel, has a blue oxalic anodized aluminium dial, with laser engraved waves, inspired by the Seamaster Diver 300M worn by James Bond in 1995’s Golden Eye. A commemorative 60 replaces the diving scale’s traditional inverted triangle. The iconic movie opening sequence, featuring Bond in silhouette and spinning gun barrel, plays out on the caseback, beneath a sapphire crystal decorated with micro-structured metallisation</p>
+              <p><span>$11,000 </span></p>
+             <div class="buy-now">
+                 <button>Buy Now</button>
+             </div>
+         </div>
+       
+         <div class="product"> 
+             <img src=" https://www.omegawatches.com/media/catalog/product/o/m/omega-seamaster-planet-ocean-600m-co-axial-chronograph-45-5_mm-22260465001001-4d49df.png?w=700" alt="Product 1">
+             <h3> Omega Seamaster Planet Ocean 222.60.46.50.01.001 - 22260465001001
+             </h3>
+             <p>The Seamaster Planet Ocean chronograph reference 222.60.46.50.01.001 was introduced in 2009. It features a red gold case paired with a matching bracelet. It is powered by the self-winding caliber 3313 movement. This watch was discontinued in 2011 in favor of the 9300-powered Planet Ocean watches.The black ceramic unidirectional rotating divers' bezel is mounted on a 45.5 mm stainless steel case on a stainless steel bracelet. The OMEGA Seamaster Planet Ocean 600M is water resistant to 600 metres / 2000 feet / 60 bar, and has a helium-escape valve. </p>
+             <p><span>  $44,000</span></p>
+             <div class="buy-now">
+                 <button>Buy Now</button>
+             </div>
+         </div>
+       
+         <div class=" product">
+             <img src="  https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS5FCk-GJ-rClOYpVlAi22_Q516jEnk5lbTOt7D1laNleRG5n8vFoyCgt63jYxaYtW6sSOrqEx1gXmbndZl3ergKQgDWtsWkARkBAvbSA6TLPcp1GjriGKvvq4h&usqp=CAE" alt="Product 1">
+             <h3>  Omega Seamaster 210.30.42.20.10.001</h3>
+             <p> The Omega Seamaster Diver 300M 210.30.42.20.10.001 men watch has an Automatic movement with 30 Bar (300 meters) of water resistance, Stainless Steel case material, Green dial color with bracelet with 55 Hours of power reserve. The Seamaster Professional Diver 300M has enjoyed a legendary following. Today's modern collection has embraced that famous ocean heritage and updated it with OMEGA's best innovation and design. This 42 mm model is crafted from stainless steel and includes a green ceramic bezel with a white enamel diving scale. The dial is also polished green ceramic and features laser-engraved waves and a date window at 6 o'clock. </p>
+             <p><span>  $60,000   </span></p>
+             <div class="buy-now">
+                 <button>Buy Now</button>
+             </div>
+         </div>
+       
+           <div class="product">
+            <img src=" https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT09SI6gz7sMLmOFp86Oo7L5F9pvDTqS0n1M0NK0Y_8hQHJgTmN9x9TbLD-kEWlGcPWpnmJo2F-dBFIsNR8K0fjuXpsX25H34yOJAL37d_mji7mLuqpnMZ1&usqp=CAE " alt="Product 1"> 
+             <h3> Omega Speedmaster Moonwatch Manual Men's Watch 310.62.42.50.99.001 </h3> 
+             <p >  The Omega Speedmaster Moonwatch 310.62.42.50.99.001 chronograph is an elegant combination of style and performance. The 42mm case is crafted in 18k yellow gold with a black ceramic bezel featuring a tachymeter scale. The classic yellow gold dial features index hour markers and three sub-dials to track seconds, minutes and hours elapsed.A black rubber strap provides comfort and security while the foldover clasp ensures the watch stays secure on the wrist. This iconic timepiece is powered by a manual, chronometer movement for accurate timekeeping over time.</p>
+             <p><span>  $35,000 </span></p>
+             <div class="buy-now">
+                 <button>Buy Now</button>
+             </div>
+         </div>
+         </div>
+         <br>
+         <br>
+         <br>
+         <br>
+        <div class="container">
+           <div class="page active" id="page1">
+           <div class="navigation">
+           <button class="btn btn-prev" ><a href=" http://127.0.0.1:5500/index.html">Previous Page</a> </button>
+           <button class="btn btn-prev" ><a href=" http://127.0.0.1:5500/index.html"> Next Page</a> </button>
+           </div>
+           </div>
+       </div>  
+         
+       <br>
+       <br>
+       <br>
+       <br>
+</body>
+</html>
